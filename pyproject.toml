@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reflex-gaugechart"
+version = "0.0.1"
+description = "The Gaugechart custom component is a Reflex wrapper for the popular react-gauge-chart React library. It provides a visually appealing and highly customizable gauge chart component, ideal for displaying percentage values or progress in a sleek, modern format."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+authors = [{ name = "Leo Gaggl", email = "leo@gaggl.com" }]
+keywords = ["reflex","reflex-custom-components", "gauge", "chart", "gaugechart", "iot", dashboard", "visualisation"]
+
+dependencies = ["reflex>=0.6.8"]
+
+classifiers = ["Development Status :: 4 - Beta"]
+
+[project.urls]
+repository = "https://github.com/leogaggl/reflex_gaugechart"
+
+[project.optional-dependencies]
+dev = ["build", "twine"]
+
+[tool.setuptools.packages.find]
+where = ["custom_components"]

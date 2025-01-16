@@ -10,7 +10,16 @@ readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.9"
 authors = [{ name = "Leo Gaggl", email = "leo@gaggl.com" }]
-keywords = ["reflex","reflex-custom-components", "gauge", "chart", "gaugechart", "iot", dashboard", "visualisation"]
+keywords = [
+    "reflex",
+    "reflex-custom-components",
+    "gauge",
+    "chart",
+    "gaugechart",
+    "iot",
+    "dashboard",
+    "visualisation",
+]
 
 dependencies = ["reflex>=0.6.8"]
 

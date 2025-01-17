@@ -1,17 +1,16 @@
 """Welcome to Reflex! This file showcases the custom component in a basic app."""
 
+
 from reflex_gaugechart import Gaugechart
 from rxconfig import config
 import reflex as rx
-
 
 filename = f"{config.app_name}/{config.app_name}.py"
 
 
 class State(rx.State):
     """The app state."""
-    nr_of_levels = rx.Var.create(5)
-    percent_value = rx.Var.create(0.6)
+    percent_value = 0.5
     pass
 
 def index() -> rx.Component:
@@ -24,7 +23,14 @@ def index() -> rx.Component:
                 rx.code(filename),
                 font_size="2em",
             ),
-            Gaugechart(id="test_chart_01", nrOfLevels=State.nr_of_levels, percent=State.percent_value),
+            Gaugechart(
+                id="test_chart_01",
+                nrOfLevels=5,
+                percent=State.percent_value,
+                textColor='#000000',
+                needleColor='#000000',
+                animate=False,
+            ),
             align="center",
             spacing="7",
         ),

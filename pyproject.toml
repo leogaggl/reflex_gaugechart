@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "reflex-gaugechart"
-version = "0.1.0"
+version = "0.1.1"
 description = "The Gaugechart custom component is a Reflex wrapper for the popular react-gauge-chart React library. It provides a visually appealing and highly customizable gauge chart component, ideal for displaying percentage values or progress in a sleek, modern format."
 readme = "README.md"
 license = { text = "Apache-2.0" }
